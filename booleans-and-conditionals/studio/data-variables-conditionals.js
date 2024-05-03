@@ -53,3 +53,6 @@ if((astronautCount >= 7) &&
   console.log('----------------------------------------------------------------');
   console.log('Have a safe trip astronauts!')
 }
+else{
+  console.log('Conditions are not met, shut down the launch operations');
+}
