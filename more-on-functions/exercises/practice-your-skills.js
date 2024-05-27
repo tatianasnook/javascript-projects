@@ -1,10 +1,20 @@
 //Create an anonymous function and set it equal to a variable.
 
 /* Your function should:
-a) If passed a number, return the tripled value.
-b) If passed a string, return the string “ARRR!”
-c) Be sure to test your function before moving on the next part. 
-*/
+a) If passed a number, return the tripled value.*/
+// b) If passed a string, return the string “ARRR!”
+// c) Be sure to test your function before moving on the next part. 
+
+let tripleValue = function(value){
+  if(typeof value === 'number'){
+    return value * 3;
+  } else if(typeof value === 'string'){
+    return 'ARRR!'
+  } else {
+    return value;
+  }
+}
+// console.log(tripleValue(false))
 
 /* Add to your code! Use your fuction and the map method to change an array  as follows:
 a) Triple any the numbers.
@@ -13,3 +23,16 @@ c) Print the new array to confirm your work.
 */
 
 let arr = ['Elocution', 21, 'Clean teeth', 100];
+
+let practice = arr.map(function(element){
+  if(typeof element === 'number'){
+    return element * 3;
+  } else if(typeof element === 'string'){
+    return 'ARRR!'
+  } else {
+    return element;
+  }
+}
+)
+
+console.log(practice);
